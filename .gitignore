@@ -1,0 +1,3 @@
+# Exclude these files and dirs
+.idea/ # Pycharm stuff
+.config_files_rep # Alternative config files

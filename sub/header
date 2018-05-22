@@ -1,0 +1,13 @@
+
+##
+##
+## Output file from haploid enrichment screen analysis script analyze_enrichment.sh
+##
+## NM=number of mutations in positively selected populations of HAP1 cells, TNM=Total number of mutations in enriched population minus mutations in associated gene
+## CT=number of mutations in non-selected control populations, TCT=Total number of mutations in control population minus mutations in associted gene
+## Pv=Fisher exact P-value, FCPv=FDR Corrected P-value
+## CCT=CT Corrected for zeros, TCTC=TCT Corrected (for zeros)
+## TI=Total Insertions (NM+CCT), MI=mutation index (NM/TNM)/(CCT/TCTC)
+## SEQ = optimal postiton of gene on x-axis when plotting the data as bubbleplot
+##
+Gene	CT	TCT	CTC	CTCT	NM	TNM	Pv	FCPv	TI 	MI 	RADIUS	SEQ

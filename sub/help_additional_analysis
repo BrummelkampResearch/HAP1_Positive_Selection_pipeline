@@ -1,0 +1,13 @@
+
+Usage: ./additional_gene_mapping.sh [OPTIONS] -D=directory
+
+Option		GNU long option		Meaning
+-h, -?		--help			display help
+-D 		--dir			followed by location of directory to previously generated results
+-N		--screenname		any name you like for the screenname, as long as you havent used it before (required unless -c is used)
+-U		--uncompressed		skip final compression of intermediate files created  (not required)
+-C		--compress		to run script in compress only mode, followed by full path the directory where data is located (cannot be used in c
+
+--- Example ---
+Standard run, with compression of intermediate files:
+./additional_gene_mapping.sh --dir=/data/enrichment_screen_output

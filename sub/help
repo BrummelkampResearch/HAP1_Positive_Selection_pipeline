@@ -1,0 +1,19 @@
+
+Usage: ./full_enrichment_analysis.sh [OPTIONS] --seq=FILENAME --name=NAME
+
+Option		GNU long option		Meaning
+-h, -?		-- help			display help
+-S 		--seq			followed by full path to fastq file of the encrichment scren (required unless -c is used)
+-N		--name		any name you like for the screenname, as long as you havent used it before (required unless -c is used)
+-U		--uncompressed		skip final compression of intermediate files created  (not required)
+-C		--compress		to run script in compress only mode, followed by full path the directory where data is located (cannot be used in conjuction with any other parameter)
+
+--- Examples ---
+Standard run, with compression of intermediate files:
+./full_enrichment_analysis.sh --seq=/data/seq.fastq.gz --name=screenname
+
+Standard run, no compression
+./full_enrichment_analysis.sh -U --seq=/data/seq.fastq.gz --name=screenname
+
+Compression of already existing output files
+./full_enrichment_analysis.sh -C=/data/screenname

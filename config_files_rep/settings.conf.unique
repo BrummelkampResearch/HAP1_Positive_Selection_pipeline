@@ -1,0 +1,31 @@
+----------------------------------------------------
+Settings file for haploid enrichment screen scripts
+----------------------------------------------------
+Description:
+All parameters are tab separated. Don't edit the name of the parameter.
+
+
+
+# These	settings are always required (ie. for additional_gene_mapping.sh and additional_gene_mapping.sh)
+#########################################################################################################
+Parameter	value   description
+---------------------------------------
+gene_ref:	/scratch/ENRICHMENT/ref/HG19_ref_unique.BED		# File containing list with genes and their genomic position
+ref_id:	unique		# A human readable and somewhat	comprehensive tag for this gene reference file (for example concatenated or unique)
+core_num:	30		# Desired number of CPU cores to be used
+memory_limit:	24G		# Amount of RAM available for analysis
+
+
+
+# These settings are only applicable to the Full Analysis Pipeline (ie. full_enrichment_analysis.sh)
+######################################################################################################
+Parameter	value   description
+---------------------------------------
+location_bowtie :	/usr/local/bin/bowtie	# enter full path
+ref_genome:	/scratch/reference_files/BOWTIE_HG19/hg19	# path to directory incl. invariable part of file name
+control_dataset:	/media/analyzed_data/enrichment_screens/control_data_HG19/seq.fastq.uniqReads_mapped_UNIQ
+trim_reads:	yes	# 'yes' or 'no'
+keep_reads_from:	0	# from which base should the reads be kept? (0 for beginning of read)
+desired_read_length:	50	# new read length
+mismatch_num:	1	# Number of mismatches allowed, cannot be more the 1
+final_dir:	/media/analyzed_data/enrichment_screens/	# To which directory should the files be written to if the analysis is done (please put / behind it!)
